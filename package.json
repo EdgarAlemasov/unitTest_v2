@@ -4,6 +4,7 @@
   "description": "try ro do unit test on js",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d dist",
     "lint": "eslint .",
     "test": "jest --coverage"
   },
