@@ -1,21 +1,22 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "jest": true
-    },
-    "extends": "airbnb-base",
-    "overrides": [
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+  },
+  extends: 'airbnb-base',
+  overrides: [
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  rules: {
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "rules": {
-        "no-restricted-syntax": [
-            "error",
-            "LabeledStatement",
-            "WithStatement"
-          ]
-    }
-}
+    'no-console': 'off',
+  },
+};
